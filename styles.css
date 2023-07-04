@@ -92,9 +92,10 @@ p {
 .hero__blurb {
   font-size: 1.68rem;
   line-height: 2.4rem;
-  margin-bottom: 1.2rem; 
+  margin-bottom: 1.2rem;
   color: #f4f5f7;
 }
+
 .hero__socials {
   display: flex;
   justify-content: center;
