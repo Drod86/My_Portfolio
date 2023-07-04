@@ -1,6 +1,8 @@
-<a name="readme-top"></a>
+# My Portfolio<a name="readme-top"></a>
 
-  <h3><b>Hello Microverse</b></h3>
+<div align="center">
+
+  <h3><b>Daniel Rodriguez</b></h3>
 
 </div>
 
@@ -26,16 +28,16 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Hello Microverse <a name="about-project"></a>
+# 📖 Developer Portfolio <a name="about-project"></a>
 
-**Hello Microverse** is a demonstration of my mastery of the tools and best practices required to create, initialize, contribute to and submit Microverse projects.
+My **Developer Portfolio** showcases my development projects, highlights my skills as a developer and assists interested parties to learn more about me and contact me regarding future opportunities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-1. HTML
-2. CSS
+- HTML
+- CSS
 
 <details>
   <summary>Client</summary>
@@ -47,9 +49,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Added index.html file**
-- **Added styles.css file**
-- **Set up linters for HTML and CSS**
+- **Project Library**
+- **Bio**
+- **Contact Form**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [See Live Demo](https://drod86.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,7 +69,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-1. Web browser.
+1. Web Browser.
 2. Code Editor.
 3. Git - SCM
 
@@ -70,13 +78,13 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-project
-  git clone https://github.com/Drod86/Hello_Microverse.git
+  cd my-folder
+  git clone https://github.com/Drod86/Drod86/My_Portfolio.git
 ```
 
 ### Install
 
-Install this project with:
+To install this project:
 
 Run this command:
 
@@ -95,20 +103,13 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Daniel Rodriguez**
 
 - GitHub: [@Drod86](https://github.com/Drod86/)
 - Twitter: [@Rafin86](https://twitter.com/Rafin86)
 - LinkedIn: [Daniel Rodriguez](https://www.linkedin.com/in/daniel-rodriguez-drod86/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Add more styling**
-- [ ] **Add Logo**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,12 +124,6 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project giv it a star ⭐️
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse and especially Omar Muhammad (CR) at Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
