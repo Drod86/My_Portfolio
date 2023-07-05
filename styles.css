@@ -255,3 +255,60 @@ p {
   }
 }
 
+/* About Section */
+.about {
+  position: relative;
+  width: 100vw;
+}
+
+.about .hero {
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: fit-content;
+  background-image: url(./images/about_bg_m.png);
+}
+
+.about .divider {
+  border: 1px solid #fff;
+  background-color: #1c1a19;
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.about .skills {
+  background-image: none;
+  padding: 2.4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.skills .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+  padding: 1rem 0;
+  flex: 1;
+}
+
+.skills .list .label {
+  font-size: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transform: translateX(-1.2rem);
+}
+
+.skills .list .label::before {
+  content: '';
+  background-color: #f55800;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.skills .list .item {
+  font-size: 2.2rem;
+}
