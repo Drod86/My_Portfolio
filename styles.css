@@ -31,6 +31,11 @@ p {
   line-height: 2.4rem;
 }
 
+:root{
+  --primary-color: hsl(22, 100%, 48%);
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
@@ -56,10 +61,27 @@ p {
 
 .btn {
   color: #fff;
-  background-color: #f55800;
+  background-color: var(--primary-color);
   font-size: 1.7rem;
   font-weight: 600;
   padding: 1.2rem;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  background-color: hsl(22, 100%, 92%);
+  border: 1px solid var(--primary-color);
+}
+
+.btn:active {
+  color: #fff;
+  background-color: 	hsl(22, 100%, 42%);
+}
+
+.btn:disabled {
+  color: hsla(360, 1%, 20%, .7);
+  background-color: hsla(360, 1%, 50%, .3);
+  border: none;
 }
 
 .badges {
@@ -134,7 +156,7 @@ p {
 }
 
 .hero .heading {
-  color: #f55800;
+  color: var(--primary-color);
   font-size: 5.6rem;
   font-weight: 100;
   line-height: 6.4rem;
@@ -164,6 +186,7 @@ p {
   grid-template-rows: repeat(3, min-content);
   grid-template-columns: [full-start] minmax(2.4rem, 15rem) [center-start] 1fr [center-end] minmax(2.4rem, 15rem) [full-end];
   row-gap: 2.4rem;
+  z-index: 1;
 }
 
 .recent-works .heading {
@@ -304,7 +327,7 @@ p {
 
 .skills .list .label::before {
   content: '';
-  background-color: #f55800;
+  background-color: var(--primary-color);
   width: 1.8rem;
   height: 1.8rem;
 }
