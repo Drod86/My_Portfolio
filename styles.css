@@ -37,7 +37,7 @@ p {
 }
 
 .heading {
-    font-family: "Crete Round", sans-serif;
+  font-family: "Crete Round", sans-serif;
 }
 
 .blurb {
@@ -108,7 +108,7 @@ p {
   height: 100vh;
   padding: 12rem 2.4rem 12rem;
   z-index: 1;
-  color: #fff;  
+  color: #fff;
 }
 
 .hero .heading {
@@ -151,7 +151,7 @@ p {
   width: 100vw;
   display: grid;
   grid-template-rows: repeat(3, min-content);
-  grid-template-columns: [full-start] minmax(2.4rem, 15rem)[center-start] 1fr [center-end] minmax(2.4rem, 15rem) [full-end];
+  grid-template-columns: [full-start] minmax(2.4rem, 15rem) [center-start] 1fr [center-end] minmax(2.4rem, 15rem) [full-end];
   row-gap: 2.4rem;
 }
 
@@ -176,9 +176,9 @@ p {
 }
 
 .recent-works .feature {
-grid-column: center-start / center-end;
-display: flex;
-flex-wrap: wrap;
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recent-works .feature .img {
@@ -204,10 +204,10 @@ flex-wrap: wrap;
 }
 
 .recent-works .projects {
-grid-column: center-start / center-end;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-gap: 2.4rem;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.4rem;
 }
 
 .recent-works .projects .card {
@@ -216,13 +216,15 @@ gap: 2.4rem;
   justify-content: flex-end;
   gap: 2.4rem;
   color: #fff;
-  background-image: linear-gradient(to top, rgba(0,0,0,.3), rgba(250,250,250, .1)), url(./images/project_bg_pro.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(250, 250, 250, 0.1)), url(./images/project_bg_pro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 7rem;
 }
 
-.recent-works .projects .card .heading, .recent-works .projects .card .blurb, .recent-works .projects .card .badges {
+.recent-works .projects .card .heading,
+.recent-works .projects .card .blurb,
+.recent-works .projects .card .badges {
   margin: 0 1.2rem;
 }
 
@@ -230,9 +232,10 @@ gap: 2.4rem;
   font-size: 3.2rem;
   font-weight: 400;
 }
+
 .recent-works .projects .card .badge {
   color: #fff;
-  background-color: rgba(250,250,250, .3);
+  background-color: rgba(250, 250, 250, 0.3);
 }
 
 @media screen and (min-width: 750px) {
