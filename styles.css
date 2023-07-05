@@ -31,10 +31,9 @@ p {
   line-height: 2.4rem;
 }
 
-:root{
+:root {
   --primary-color: hsl(22, 100%, 48%);
 }
-
 
 .container {
   display: flex;
@@ -75,12 +74,12 @@ p {
 
 .btn:active {
   color: #fff;
-  background-color: 	hsl(22, 100%, 42%);
+  background-color: hsl(22, 100%, 42%);
 }
 
 .btn:disabled {
-  color: hsla(360, 1%, 20%, .7);
-  background-color: hsla(360, 1%, 50%, .3);
+  color: hsla(360, 1%, 20%, 0.7);
+  background-color: hsla(360, 1%, 50%, 0.3);
   border: none;
 }
 
