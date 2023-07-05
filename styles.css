@@ -1,3 +1,4 @@
+/* Universal Styles */
 *,
 *::before,
 *::after {
@@ -29,6 +30,14 @@ a {
 p {
   line-height: 2.4rem;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* components */
 
 .card {
   display: flex;
@@ -66,7 +75,19 @@ p {
   padding: 1.2rem;
 }
 
-/* header */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 0 1.2rem;
+}
+
+.socials .item {
+  list-style-type: none;
+  width: fit-content;
+}
+
+/* header Section*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -95,6 +116,7 @@ p {
   height: 2rem;
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   flex-flow: column;
@@ -133,18 +155,7 @@ p {
   color: #f4f5f7;
 }
 
-.hero .socials {
-  display: flex;
-  justify-content: center;
-  gap: 2.4rem;
-  padding: 0 1.2rem;
-}
-
-.socials .item {
-  list-style-type: none;
-  width: fit-content;
-}
-
+/* Recent Works Section */
 .recent-works {
   position: relative;
   top: 100vh;
@@ -243,3 +254,4 @@ p {
     width: 60%;
   }
 }
+
