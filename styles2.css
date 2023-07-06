@@ -77,7 +77,6 @@ ul, li {
 .blurb {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  line-height: 2.4rem;
 }
 
 .btn {
@@ -186,15 +185,14 @@ ul, li {
 @media screen and (min-width: 750px) {
   .hero .grid-item {
     max-width: 50%;
-    padding: 0;
-    justify-content: center;
   }
 
   .hero .grid-item .socials {
     position: absolute;
     left: 2.4rem;
-    bottom: 34vh;
+    bottom: 26vh;
     flex-direction: column;
+    gap: 1.2rem;
   }
 }
 
@@ -212,17 +210,10 @@ ul, li {
 }
 
 .hero .blurb {
-  font-size: 1.6rem;
+  font-size: 1.68rem;
   line-height: 2.4rem;
   /* margin-bottom: 1.2rem; */
   color: #f4f5f7;
-}
-
-@media screen and (min-width: 750px) {
-  .hero .blurb {
-    font-size: 2rem;
-    line-height: 3.2rem;
-  }
 }
 
 /* Recent Works Section */
@@ -283,14 +274,11 @@ ul, li {
 .recent-works .feature .heading {
   font-size: 3.2rem;
   font-weight: 400;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-@media screen and (min-width: 750px) {
-  .recent-works .feature .blurb {
-    font-size: 2rem;
-    line-height: 2.8rem;
-  }
+.recent-works .feature .blurb {
+  flex: 1;
 }
 
 .recent-works .feature .badge {
@@ -332,12 +320,6 @@ ul, li {
   font-weight: 400;
 }
 
-@media screen and (min-width: 750px) {
-  .recent-works .projects .card .blurb {
-    font-size: 1.7rem;
-  }
-}
-
 .recent-works .projects .card .badge {
   color: #fff;
   background-color: rgba(250, 250, 250, 0.3);
@@ -357,16 +339,11 @@ ul, li {
 
 @media screen and (min-width: 750px) {
   .about {
-    background: #1c1a19 url(./images/about_bg_d.png) no-repeat top 7rem right;
+    background: #1c1a19 url(./images/about_bg_d.png) no-repeat top 4rem right;
     background-size: 40%;
   }
   .about .resume {
     width: 50%;
-  }
-
-  .about .resume .blurb {
-    font-size: 2rem;
-    line-height: 3.2rem;
   }
 
   .about .resume .btn {
@@ -382,6 +359,8 @@ ul, li {
   background-color: rgba(0, 0, 0, 0.0);
   background-image: none;
 }
+
+
 
 .about .hero .btn {
   width: fit-content;
