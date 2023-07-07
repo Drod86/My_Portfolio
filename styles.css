@@ -59,7 +59,7 @@ ul, li {
   /* row-gap: 2.4rem; */
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .grid {
     grid-template-columns: [full-start] minmax(2.4rem, 10vw) [center-start] 1fr [center-end] minmax(2.4rem, 10vw) [full-end];
   }
@@ -169,7 +169,7 @@ ul, li {
   color: var(--white-font);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .hero {
     background: var(--bg-black) url(./images/hero_bg_d.png) no-repeat top right;
     background-size: 80vh;
@@ -191,7 +191,7 @@ ul, li {
   padding: 12rem 0 12rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .hero .grid-item {
     max-width: 50%;
     padding: 0;
@@ -226,7 +226,7 @@ ul, li {
   color: var(--area-bg-color);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .hero .blurb {
     font-size: 2rem;
     line-height: 3.2rem;
@@ -279,7 +279,7 @@ ul, li {
   flex: 1;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .recent-works .feature .img {
     max-width: 60%;
   }
@@ -295,7 +295,7 @@ ul, li {
   margin: 0;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .recent-works .feature .blurb {
     font-size: 2rem;
     line-height: 2.8rem;
@@ -342,7 +342,7 @@ ul, li {
   font-weight: 400;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .recent-works .projects .card .blurb {
     font-size: 1.7rem;
   }
@@ -365,7 +365,7 @@ ul, li {
   background-position: right 0 top 28rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .about {
     background: var(--bg-black) url(./images/about_bg_d.png) no-repeat top 7rem right;
     background-size: 40%;
@@ -463,7 +463,7 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .contact .blurb {
     color: var(--form-blurb-color);
     font-size: 4rem;
@@ -521,7 +521,7 @@ footer {
   margin-bottom: space(4.75);
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .form .btn {
     align-self: flex-start;
   }
@@ -536,7 +536,7 @@ footer {
   margin: 1.2rem 0 2.4rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .footer .socials {
     margin-bottom: 1.2rem;
   }
@@ -553,8 +553,16 @@ footer .socials .icon {
   margin: 1.2rem 7rem .6rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .home-indicator{
     display: none;
   }
+}
+
+@media screen and (min-width: 375px) {
+  /* coming soon */
+}
+
+@media screen and (min-width: 768px) {
+  /* coming soon */
 }
