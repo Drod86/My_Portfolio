@@ -40,6 +40,15 @@ ul, li {
 
 :root {
   --primary-color: hsl(22, 100%, 48%);
+  --bg-black: #1c1a19;
+  --dark-font-color: #172B4D;
+  --footer-icon-color: #505F79;
+  --form-blurb-color: #262626;
+  --header-color: #3C3A39;
+  --form-text-color: #979493;
+  --hero-icon-color: #DBD8D7; 
+  --area-bg-color: #FBF8F7;
+  --white-font: #fff;
 }
 
 .grid {
@@ -81,7 +90,7 @@ ul, li {
 }
 
 .btn {
-  color: #fff;
+  color: var(--white-font);
   background-color: var(--primary-color);
   font-size: 1.7rem;
   font-weight: 600;
@@ -95,7 +104,7 @@ ul, li {
 }
 
 .btn:active {
-  color: #fff;
+  color: var(--white-font);
   background-color: hsl(22, 100%, 42%);
 }
 
@@ -128,13 +137,13 @@ ul, li {
 .icon {
   width: 2rem;
   height: 2rem;
-  fill: white;
+  fill: var(--white-font);
 }
 
 /* Header Section */
 .header {
-  background-color: #3c3a3c;
-  color: #fff;
+  background-color: var(--header-color);
+  color: var(--white-font);
   min-height: 4.8rem;
   position: sticky;
   top: 0;
@@ -142,7 +151,6 @@ ul, li {
 }
 
 .header .grid-item {
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,13 +165,13 @@ ul, li {
 /* Hero Section */
 
 .hero {
-  background: #1c1a19 url(./images/hero_bg_m.png) no-repeat bottom -4.2rem right;
-  color: #fff;
+  background: var(--bg-black) url(./images/hero_bg_m.png) no-repeat bottom -4.2rem right;
+  color: var(--white-font);
 }
 
 @media screen and (min-width: 750px) {
   .hero {
-    background: #1c1a19 url(./images/hero_bg_d.png) no-repeat top right;
+    background: var(--bg-black) url(./images/hero_bg_d.png) no-repeat top right;
     background-size: 80vh;
   }
 }
@@ -215,7 +223,7 @@ ul, li {
   font-size: 1.6rem;
   line-height: 2.4rem;
   /* margin-bottom: 1.2rem; */
-  color: #f4f5f7;
+  color: var(--area-bg-color);
 }
 
 @media screen and (min-width: 750px) {
@@ -244,6 +252,7 @@ ul, li {
   margin: 3.6rem 0;
   gap: 2.4rem;
   flex-wrap: wrap;
+  color: var(--dark-font-color);
 }
 
 .recent-works .heading .title {
@@ -252,7 +261,7 @@ ul, li {
 }
 
 .recent-works .heading .line {
-  border: 1px solid black;
+  border: 1px solid var(--bg-black);
   flex: 1;
   min-width: 32.7rem;
 }
@@ -294,7 +303,7 @@ ul, li {
 }
 
 .recent-works .feature .badge {
-  border: 1px solid black;
+  border: 1px solid var(--bg-black);
 }
 
 .recent-works .feature .btn {
@@ -314,7 +323,7 @@ ul, li {
   flex-direction: column;
   justify-content: flex-end;
   gap: 2.4rem;
-  color: #fff;
+  color: var(--white-font);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(250, 250, 250, 0.1)), url(./images/project_bg_pro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -328,6 +337,7 @@ ul, li {
 }
 
 .recent-works .projects .card .heading {
+  color: var(--white-font);
   font-size: 3.2rem;
   font-weight: 400;
 }
@@ -339,7 +349,7 @@ ul, li {
 }
 
 .recent-works .projects .card .badge {
-  color: #fff;
+  color: var(--white-font);
   background-color: rgba(250, 250, 250, 0.3);
 }
 
@@ -348,7 +358,7 @@ ul, li {
   position: relative;
   top: 100vh;
   width: 100vw;
-  background-color: #1c1a19;
+  background-color: var(--bg-black);
   margin-top: 7rem;
   background-image: url(./images/about_bg_m.png);
   background-repeat: no-repeat;
@@ -357,7 +367,7 @@ ul, li {
 
 @media screen and (min-width: 750px) {
   .about {
-    background: #1c1a19 url(./images/about_bg_d.png) no-repeat top 7rem right;
+    background: var(--bg-black) url(./images/about_bg_d.png) no-repeat top 7rem right;
     background-size: 40%;
   }
   .about .resume {
@@ -388,8 +398,8 @@ ul, li {
 }
 
 .about .divider {
-  border: 1px solid #fff;
-  background-color: #1c1a19;
+  border: 1px solid var(--white-font);
+  background-color: var(--bg-black);
   width: 100%;
   margin-bottom: 7rem;
 }
@@ -445,7 +455,7 @@ footer {
 }
 
 .contact .blurb {
-  color: black;
+  color: var(--dark-font-color);
   flex: 1;
   font-size: 3.2rem;
   line-height: 4.5rem;
@@ -455,7 +465,7 @@ footer {
 
 @media screen and (min-width: 750px) {
   .contact .blurb {
-    color: darkslategray;
+    color: var(--form-blurb-color);
     font-size: 4rem;
     line-height: 5.2rem;
     text-align: left;
@@ -474,14 +484,14 @@ footer {
 }
 
 .form .text {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--hero-icon-color);
   font-size: 1.5rem;
   padding: 1.5rem;
   width: 100%;
 }
 
 .form .text::placeholder {
-  color: gray;
+  color: var(--form-text-color);
   font-weight: 100;
   opacity: 0.8;
 }
@@ -492,7 +502,7 @@ footer {
 }
 
 .form .area {
-  background-color: gainsboro;
+  background-color: var(--area-bg-color);
   font-size: 1.5rem;
   font-weight: 400;
   height: 12rem;
@@ -501,7 +511,7 @@ footer {
 }
 
 .area::placeholder {
-  color: darkslategray;
+  color: var(--header-color);
   font-style: italic;
   font-weight: 500;
 }
@@ -519,7 +529,7 @@ footer {
 
 .footer .divider {
   grid-column: full-start / full-end;
-  border-top: 1px solid gainsboro;
+  border-top: 1px solid var(--hero-icon-color);
 }
 
 .footer .socials {
@@ -534,11 +544,11 @@ footer {
 
     
 footer .socials .icon {
-  fill: darkslategray;
+  fill: var(--footer-icon-color);
 }
 
 .home-indicator {
-  border-top: 5.5px solid darkslategray;
+  border-top: 5.5px solid var(--form-blurb-color);
   border-radius: 50px;
   margin: 1.2rem 7rem .6rem;
 }
