@@ -215,6 +215,99 @@
             <li class="item">Web Development</li>
           </ul>
         </section>
+      </section>
+      <footer class="footer grid">
+        <section id="contact" class="contact grid-item">
+          <h2 class="blurb">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+          <form
+            class="form"
+            action="https://formspree.io/f/xqkorljq"
+            method="POST"
+          >
+            <input
+              name="First name"
+              type="text"
+              maxlength="30"
+              class="firstName text"
+              placeholder="First name"
+            />
+            <input
+              name="Last name"
+              type="text"
+              placeholder="Last name"
+              class="lastName text"
+              maxlength="30"
+            />
+            <input
+              name="Full name"
+              type="text"
+              placeholder="Full name"
+              class="fullName text"
+              maxlength="30"
+              required
+            />
+            <input
+              name="Email"
+              type="email"
+              placeholder="Email address"
+              required
+              class="email text"
+            />
+            <textarea
+              class="message area"
+              name="Message"
+              placeholder="Write me something..."
+              maxlength="500"
+              required
+            ></textarea>
+            <button type="submit" class="btn">
+              Get in touch
+            </button>
+          </form>
+        </section>
+        <figure class="divider grid-item"></figure>
+        <ul class="socials grid-item">
+          <li class="socials__icon">
+            <a href="" class="socials__github">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="" class="socials__linkedin">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+           </li>
+          <li class="socials__icon">
+            <a href="" class="socials__angellist">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#angellist"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="#about" class="socials__twitter">
+              <svg class="icon">
+              <use xlink:href="./images/sprite.svg#twitter"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="" class="socials__medium">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#medium"></use>
+            </svg>
+          </a>
+          </li>
+        </ul>
+        <figure class="home-indicator grid-item"></figure>
+      </footer>
     </div>
   </body>
 </html>

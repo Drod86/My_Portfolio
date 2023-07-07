@@ -429,3 +429,122 @@ ul, li {
 .skills .list .item {
   font-size: 2.2rem;
 }
+
+/* Footer */
+footer {
+  position: relative;
+  top: 100vh;
+}
+/* contact form */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7rem 0;
+  gap: 2.4rem;
+}
+
+.contact .blurb {
+  color: black;
+  flex: 1;
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .contact .blurb {
+    color: darkslategray;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    text-align: left;
+    flex: 1;
+  }
+  .contact .form {
+    flex: 1;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.form .text {
+  border-bottom: 1px solid gray;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.form .text::placeholder {
+  color: gray;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.firstName,
+.lastName {
+  display: none;
+}
+
+.form .area {
+  background-color: gainsboro;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 12rem;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+.area::placeholder {
+  color: darkslategray;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.form .btn {
+  align-self: center;
+  margin-bottom: space(4.75);
+}
+
+@media screen and (min-width: 750px) {
+  .form .btn {
+    align-self: flex-start;
+  }
+}
+
+.footer .divider {
+  grid-column: full-start / full-end;
+  border-top: 1px solid gainsboro;
+}
+
+.footer .socials {
+  margin: 1.2rem 0 2.4rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer .socials {
+    margin-bottom: 1.2rem;
+  }
+}
+
+    
+footer .socials .icon {
+  fill: darkslategray;
+}
+
+.home-indicator {
+  border-top: 5.5px solid darkslategray;
+  border-radius: 50px;
+  margin: 1.2rem 7rem .6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .home-indicator{
+    display: none;
+  }
+}
