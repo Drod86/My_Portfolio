@@ -51,6 +51,53 @@ li {
   --white-font: #fff;
 }
 
+@keyframes pulse {
+  from {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(110%);
+  }
+
+  to {
+    transform: scale(100%);
+  }
+}
+
+@keyframes bounceInLeft {
+  from {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bounceInRight {
+  from {
+    transform: translateX(200%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-In {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: [full-start] minmax(2.4rem, 5vw) [center-start] 1fr [center-end] minmax(2.4rem, 5vw) [full-end];
@@ -63,7 +110,6 @@ li {
 }
 
 .grid-item {
-  /* border: 5px solid blue; */
   grid-column: center-start / center-end;
 }
 
@@ -137,6 +183,12 @@ li {
   fill: var(--white-font);
 }
 
+@media screen and (min-width: 768px) {
+  .icon:hover {
+    animation: 1.5s infinite pulse;
+  }
+}
+
 /* Header Section */
 .header {
   background-color: var(--header-color);
@@ -157,6 +209,7 @@ li {
 .header .logo {
   font-size: 1.8rem;
   font-weight: 500;
+  animation: 2s fade-In, 3s ease-in-out bounceInLeft;
 }
 
 .header .nav {
@@ -183,6 +236,16 @@ li {
   .header .logo {
     font-size: 2rem;
     font-weight: 700;
+    animation: 2s fade-In, 3s ease-in-out bounceInLeft;
+  }
+
+  .header .item:hover,
+  .header .icon:hover {
+    animation: 1.5s infinite pulse;
+  }
+
+  .header .nav {
+    animation: 2s fade-In, 3s ease-in-out bounceInRight;
   }
 
   .header .nav .item,
@@ -236,6 +299,7 @@ li {
     left: 2.4rem;
     bottom: 34vh;
     flex-direction: column;
+    animation: 2s fade-In, 3s ease-in-out bounceInLeft;
   }
 }
 
@@ -255,8 +319,6 @@ li {
 .hero .blurb {
   font-size: 1.6rem;
   line-height: 2.4rem;
-
-  /* margin-bottom: 1.2rem; */
   color: var(--area-bg-color);
 }
 
@@ -364,6 +426,10 @@ li {
   padding-top: 7rem;
 }
 
+.recent-works .projects .card {
+  animation: 2s fade-In, 3s bounceInLeft;
+}
+
 .recent-works .projects .card .heading,
 .recent-works .projects .card .blurb,
 .recent-works .projects .card .badges {
@@ -386,16 +452,6 @@ li {
     background-image: url(./images/project_bg_pro_w.jpg);
   }
 
-  .recent-works .projects .card:hover .heading,
-  .recent-works .projects .card:hover .blurb,
-  .recent-works .projects .card:hover .badges {
-    display: none;
-  }
-
-  .recent-works .projects .card:hover .btn {
-    display: inline-block;
-  }
-
   .recent-works .projects .card .blurb {
     font-size: 1.7rem;
   }
@@ -408,6 +464,15 @@ li {
     display: none;
   }
 
+  .recent-works .projects .card:hover .heading,
+  .recent-works .projects .card:hover .blurb,
+  .recent-works .projects .card:hover .badges {
+    display: none;
+  }
+
+  .recent-works .projects .card:hover .btn {
+    display: inline-block;
+  }
 }
 
 
