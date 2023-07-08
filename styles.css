@@ -145,7 +145,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 2;
-  transform: translateY(-.1rem);
+  transform: translateY(-0.1rem);
 }
 
 .header .grid-item {
@@ -165,9 +165,9 @@ li {
   align-items: center;
 }
 
-.header .nav .menu .icon {
+.header .nav .menu {
   margin: 0;
-  transform: translateY(.2rem);
+  transform: translateY(0.2rem);
 }
 
 .header .nav .item,
