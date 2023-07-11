@@ -66,7 +66,6 @@ li {
 }
 
 /* components */
-
 .card {
   display: flex;
   flex-direction: column;
@@ -170,7 +169,8 @@ li {
   transform: translateY(0.2rem);
 }
 
-.header .item {
+.header .item,
+.header .nav .menu {
   list-style: none;
 }
 
@@ -200,15 +200,22 @@ li {
 }
 
 /* Hero Section */
-
 .hero {
   background: var(--bg-black) url(./images/hero_bg_m.png) no-repeat bottom -4.2rem right;
   color: var(--white-font);
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background: var(--bg-black) url(./images/hero_bg_d.png) no-repeat top right;
+    background-size: 80vh;
+  }
+}
+
 .hero-grid {
   position: absolute;
   top: 0;
+  width: 100vw;
 }
 
 .hero .grid-item {
@@ -219,6 +226,21 @@ li {
   gap: 2.4rem;
   height: 100vh;
   padding: 12rem 0 12rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .grid-item {
+    max-width: 50%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero .grid-item .socials {
+    position: absolute;
+    left: 2.4rem;
+    bottom: 34vh;
+    flex-direction: column;
+  }
 }
 
 .hero .heading {
@@ -237,9 +259,14 @@ li {
 .hero .blurb {
   font-size: 1.6rem;
   line-height: 2.4rem;
-
-  /* margin-bottom: 1.2rem; */
   color: var(--area-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .blurb {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
 }
 
 /* Recent Works Section */
@@ -286,6 +313,12 @@ li {
 .recent-works .feature .img {
   max-width: 100%;
   flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .recent-works .feature .img {
+    max-width: 60%;
+  }
 }
 
 .recent-works .feature .card {
@@ -432,6 +465,13 @@ li {
   gap: 2.4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .about .skills {
+    justify-content: space-between;
+    gap: 11.5rem;
+  };
+}
+
 .skills .list {
   display: flex;
   flex-direction: column;
@@ -440,6 +480,13 @@ li {
   list-style: none;
   padding: 1rem 0;
   flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .skills .list {
+    align-items: flex-start;
+    padding: 1rem  0 1rem 4.8rem;
+  };
 }
 
 .skills .list .label {
@@ -457,6 +504,14 @@ li {
   height: 1.8rem;
 }
 
+.skills .list .label--1::before {
+  transform: rotate(45deg);
+}
+
+.skills .list .label--3::before {
+  border-radius: 5rem;
+}
+
 .skills .list .item {
   font-size: 2.2rem;
 }
@@ -468,7 +523,6 @@ li {
 }
 
 /* contact form */
-
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -581,12 +635,4 @@ footer .socials .icon {
   .home-indicator {
     display: none;
   }
-}
-
-@media screen and (min-width: 375px) {
-  /* coming soon */
-}
-
-@media screen and (min-width: 768px) {
-  /* coming soon */
 }
