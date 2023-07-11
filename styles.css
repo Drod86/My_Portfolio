@@ -121,6 +121,7 @@ li {
   justify-content: center;
   gap: 2rem;
   padding: 0 1.2rem;
+  list-style: none;
 }
 
 .icon {
@@ -137,6 +138,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 2;
+  transform: translateY(-.1rem);
 }
 
 .header .grid-item {
@@ -150,6 +152,10 @@ li {
 .header .logo {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.header .item {
+  list-style: none;
 }
 
 /* Hero Section */
