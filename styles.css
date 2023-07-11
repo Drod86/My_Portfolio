@@ -157,7 +157,6 @@ li {
   font-weight: 500;
 }
 
-
 .header .nav {
   display: flex;
   gap: 3.6rem;
@@ -377,6 +376,18 @@ li {
 }
 
 @media screen and (min-width: 768px) {
+  .recent-works .projects .card .blurb {
+    font-size: 1.7rem;
+  }
+
+  .recent-works .projects .card .badges {
+    padding-bottom: 1.2rem;
+  }
+
+  .recent-works .projects .card .btn {
+    display: none;
+  }
+
   .recent-works .projects .card:hover {
     background-image: url(./images/project_bg_pro_w.jpg);
   }
@@ -390,21 +401,7 @@ li {
   .recent-works .projects .card:hover .btn {
     display: inline-block;
   }
-
-  .recent-works .projects .card .blurb {
-    font-size: 1.7rem;
-  }
-
-  .recent-works .projects .card .badges {
-    padding-bottom: 1.2rem;
-  }
-
-  .recent-works .projects .card .btn {
-    display: none;
-  }
-
 }
-
 
 /* About Section */
 .about {
@@ -469,7 +466,7 @@ li {
   .about .skills {
     justify-content: space-between;
     gap: 11.5rem;
-  };
+  }
 }
 
 .skills .list {
@@ -486,7 +483,7 @@ li {
   .skills .list {
     align-items: flex-start;
     padding: 1rem  0 1rem 4.8rem;
-  };
+  }
 }
 
 .skills .list .label {
