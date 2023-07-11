@@ -421,6 +421,7 @@ li {
 
 .form .area {
   background-color: var(--area-bg-color);
+  font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   height: 12rem;
@@ -430,6 +431,7 @@ li {
 
 .area::placeholder {
   color: var(--header-color);
+  font-family: inherit;
   font-style: italic;
   font-weight: 500;
 }
