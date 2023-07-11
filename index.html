@@ -19,70 +19,74 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <a class="logo" href="#">My Logo</a>
-        <nav class="nav">
-          <li class="item">
-            <svg class="icon icon--m">
-              <use xlink:href="./images/sprite.svg#menu"></use>
-            </svg>  
-          </li>
-        </nav>
+      <header class="header grid">
+        <div class="grid-item">
+          <a class="logo" href="#">My Logo</a>
+          <nav class="nav">
+            <li class="item">
+              <svg class="icon icon--m">
+                <use xlink:href="./images/sprite.svg#menu"></use>
+              </svg>  
+            </li>
+          </nav>
+        </div>
       </header>
-      <section class="hero">
-        <h1 class="heading">
-          <span>Hey There.</span> <span>I'm Daniel.</span>
-        </h1>
-        <h3 class="subheading">I'm a Software Developer</h3>
-        <p class="blurb">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hesitate to contact me.
-        </p>
-        <ul class="socials">
-          <li class="item">
-            <a href="" class="link">
-              <svg class="icon">
-                <use xlink:href="./images/sprite.svg#github"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a href="" class="link">
-              <svg class="icon">
-                <use xlink:href="./images/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a href="" class="link">
-              <svg class="icon">
-                <use xlink:href="./images/sprite.svg#angellist"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a href="#about" class="link">
-              <svg class="icon">
-                <use xlink:href="./images/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a href="" class="link">
-              <svg class="icon">
-                <use xlink:href="./images/sprite.svg#medium"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <section class="hero hero-grid grid">
+        <div class="grid-item">
+          <h1 class="heading">
+            <span>Hey There.</span> <span>I'm Daniel.</span>
+          </h1>
+          <h3 class="subheading">I'm a Software Developer</h3>
+          <p class="blurb">
+            I can help you build a product , feature or website Look through some
+            of my work and experience! If you like what you see and have a project
+            you need coded, don’t hesitate to contact me.
+          </p>
+          <ul class="socials">
+            <li class="item">
+              <a href="" class="link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#angellist"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#about" class="link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link">
+                <svg class="icon">
+                  <use xlink:href="./images/sprite.svg#medium"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="recent-works">
-        <div id="portfolio" class="heading">
+      <section class="recent-works grid">
+        <div id="portfolio" class="heading grid-item">
           <h2 class="title">My Recent Works</h2>
           <figure class="line"></figure>
         </div>
-        <section class="feature">
+        <section class="feature grid-item">
           <img
             class="img"
             src="./images/feature_project.png"
@@ -105,7 +109,7 @@
             <button type="button" class="btn" >See project</button>
           </article>
         </section>
-        <section class="projects">
+        <section class="projects grid-item">
           <article class="card">
             <h3 class="heading">Profesional Art Printing Data</h3>
             <p class="blurb">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
@@ -168,8 +172,8 @@
           </article>
         </section>
       </section>
-      <section id="about" class="about">
-        <section class="hero">
+      <section id="about" class="about grid">
+        <section class="hero grid-item resume">
           <h2 class="heading">About me</h2>
           <p class="blurb">
             I can help you build a product , feature or website Look through
@@ -179,7 +183,7 @@
           <button type="button" class="btn">Get my resume</button>
         </section>
         
-        <section class="skills hero">
+        <section class="skills hero grid-item">
           <figure class="divider"></figure>
           <ul class="list">
             <li class="item label label--1">
@@ -211,6 +215,98 @@
             <li class="item">Web Development</li>
           </ul>
         </section>
+      </section>
+      <footer class="footer grid">
+        <section id="contact" class="contact grid-item">
+          <h2 class="blurb">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+          </h2>
+          <form
+            class="form"
+            action="https://formspree.io/f/xqkorljq"
+            method="POST"
+          >
+            <input
+              name="First name"
+              type="text"
+              maxlength="30"
+              class="firstName text"
+              placeholder="First name"
+            />
+            <input
+              name="Last name"
+              type="text"
+              placeholder="Last name"
+              class="lastName text"
+              maxlength="30"
+            />
+            <input
+              name="Full name"
+              type="text"
+              placeholder="Full name"
+              class="fullName text"
+              maxlength="30"
+              required
+            />
+            <input
+              name="Email"
+              type="email"
+              placeholder="Email address"
+              required
+              class="email text"
+            />
+            <textarea
+              class="message area"
+              name="Message"
+              placeholder="Write me something..."
+              maxlength="500"
+              required
+            ></textarea>
+            <button type="submit" class="btn">
+              Get in touch
+            </button>
+          </form>
+        </section>
+        <figure class="divider grid-item"></figure>
+        <ul class="socials grid-item">
+          <li class="socials__icon">
+            <a href="" class="socials__github">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="" class="socials__linkedin">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+           </li>
+          <li class="socials__icon">
+            <a href="" class="socials__angellist">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#angellist"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="#about" class="socials__twitter">
+              <svg class="icon">
+              <use xlink:href="./images/sprite.svg#twitter"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="socials__icon">
+            <a href="" class="socials__medium">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#medium"></use>
+            </svg>
+          </a>
+          </li>
+        </ul>
+        <figure class="home-indicator grid-item"></figure>
+      </footer>
     </div>
   </body>
 </html>
