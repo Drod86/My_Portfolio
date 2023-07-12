@@ -211,6 +211,11 @@ li {
   animation: 2s fade-In, 3s ease-in-out bounceInLeft;
 }
 
+.header .logo:hover {
+  color: var(--primary-color);
+  transform: scale(110%);
+}
+
 .header .nav {
   display: flex;
   gap: 3.6rem;
