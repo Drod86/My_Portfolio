@@ -111,6 +111,20 @@ To run the project, execute the following command:
 - Twitter: [@Rafin86](https://twitter.com/Rafin86)
 - LinkedIn: [Daniel Rodriguez](https://www.linkedin.com/in/daniel-rodriguez-drod86/)
 
+## 👥 Collaborators
+
+👤 **Wilfried Muyisa**
+
+- GitHub: [@Drod86](https://github.com/WilfriedM01)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **UX Animations**
+- [ ] **Mobile Menu**
+- [ ] **Project Modal**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>

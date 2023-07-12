@@ -55,12 +55,17 @@ li {
   grid-template-columns: [full-start] minmax(2.4rem, 5vw) [center-start] 1fr [center-end] minmax(2.4rem, 5vw) [full-end];
 }
 
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: [full-start] minmax(2.4rem, 10vw) [center-start] 1fr [center-end] minmax(2.4rem, 10vw) [full-end];
+  }
+}
+
 .grid-item {
   grid-column: center-start / center-end;
 }
 
 /* components */
-
 .card {
   display: flex;
   flex-direction: column;
@@ -112,7 +117,7 @@ li {
 }
 
 .badge {
-  list-style-type: none;
+  list-style: none;
   padding: 1.2rem;
 }
 
@@ -145,8 +150,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* border: 1px solid red; */
 }
 
 .header .logo {
@@ -154,20 +157,64 @@ li {
   font-weight: 500;
 }
 
-.header .item {
+.header .nav {
+  display: flex;
+  gap: 3.6rem;
+  align-items: center;
+}
+
+.header .nav .menu {
+  margin: 0;
+  transform: translateY(0.2rem);
+}
+
+.header .item,
+.header .nav .menu {
   list-style: none;
 }
 
-/* Hero Section */
+.header .nav .item,
+.header .nav .menu .icon--d {
+  display: none;
+}
 
+.header .nav .menu .icon--m {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .header .logo {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .header .nav .item,
+  .header .nav .menu .icon--d {
+    display: inline-block;
+  }
+
+  .header .nav .menu .icon--m {
+    display: none;
+  }
+}
+
+/* Hero Section */
 .hero {
   background: var(--bg-black) url(./images/hero_bg_m.png) no-repeat bottom -4.2rem right;
   color: var(--white-font);
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background: var(--bg-black) url(./images/hero_bg_d.png) no-repeat top right;
+    background-size: 80vh;
+  }
+}
+
 .hero-grid {
   position: absolute;
   top: 0;
+  width: 100vw;
 }
 
 .hero .grid-item {
@@ -178,6 +225,21 @@ li {
   gap: 2.4rem;
   height: 100vh;
   padding: 12rem 0 12rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .grid-item {
+    max-width: 50%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .hero .grid-item .socials {
+    position: absolute;
+    left: 2.4rem;
+    bottom: 34vh;
+    flex-direction: column;
+  }
 }
 
 .hero .heading {
@@ -196,9 +258,14 @@ li {
 .hero .blurb {
   font-size: 1.6rem;
   line-height: 2.4rem;
-
-  /* margin-bottom: 1.2rem; */
   color: var(--area-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero .blurb {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
 }
 
 /* Recent Works Section */
@@ -247,6 +314,12 @@ li {
   flex: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .recent-works .feature .img {
+    max-width: 60%;
+  }
+}
+
 .recent-works .feature .card {
   flex: 1;
 }
@@ -279,7 +352,7 @@ li {
   justify-content: flex-end;
   gap: 2.4rem;
   color: var(--white-font);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(250, 250, 250, 0.1)), url(./images/project_bg_pro.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(250, 250, 250, 0.1)), url(./images/project_bg_pro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 7rem;
@@ -302,6 +375,34 @@ li {
   background-color: rgba(250, 250, 250, 0.3);
 }
 
+@media screen and (min-width: 768px) {
+  .recent-works .projects .card .blurb {
+    font-size: 1.7rem;
+  }
+
+  .recent-works .projects .card .badges {
+    padding-bottom: 1.2rem;
+  }
+
+  .recent-works .projects .card .btn {
+    display: none;
+  }
+
+  .recent-works .projects .card:hover {
+    background-image: url(./images/project_bg_pro_w.jpg);
+  }
+
+  .recent-works .projects .card:hover .heading,
+  .recent-works .projects .card:hover .blurb,
+  .recent-works .projects .card:hover .badges {
+    display: none;
+  }
+
+  .recent-works .projects .card:hover .btn {
+    display: inline-block;
+  }
+}
+
 /* About Section */
 .about {
   position: relative;
@@ -312,6 +413,26 @@ li {
   background-image: url(./images/about_bg_m.png);
   background-repeat: no-repeat;
   background-position: right 0 top 28rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background: var(--bg-black) url(./images/about_bg_d.png) no-repeat top 9.5rem right;
+    background-size: 40%;
+  }
+
+  .about .resume {
+    width: 50%;
+  }
+
+  .about .resume .blurb {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  .about .resume .btn {
+    margin-top: 1.2rem;
+  }
 }
 
 .about .hero {
@@ -341,6 +462,13 @@ li {
   gap: 2.4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .about .skills {
+    justify-content: space-between;
+    gap: 11.5rem;
+  }
+}
+
 .skills .list {
   display: flex;
   flex-direction: column;
@@ -349,6 +477,13 @@ li {
   list-style: none;
   padding: 1rem 0;
   flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .skills .list {
+    align-items: flex-start;
+    padding: 1rem  0 1rem 4.8rem;
+  }
 }
 
 .skills .list .label {
@@ -366,6 +501,14 @@ li {
   height: 1.8rem;
 }
 
+.skills .list .label--1::before {
+  transform: rotate(45deg);
+}
+
+.skills .list .label--3::before {
+  border-radius: 5rem;
+}
+
 .skills .list .item {
   font-size: 2.2rem;
 }
@@ -377,7 +520,6 @@ li {
 }
 
 /* contact form */
-
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -385,13 +527,27 @@ li {
   gap: 2.4rem;
 }
 
-.footer .contact h2 {
+.contact h2 {
   color: var(--dark-font-color);
   flex: 1;
   font-size: 3.2rem;
   line-height: 4.5rem;
   padding-bottom: 1.2rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact h2 {
+    color: var(--form-blurb-color);
+    font-size: 4rem;
+    line-height: 5.2rem;
+    text-align: left;
+    flex: 1;
+  }
+
+  .contact .form {
+    flex: 1;
+  }
 }
 
 .form {
@@ -441,6 +597,12 @@ li {
   margin-bottom: space(4.75);
 }
 
+@media screen and (min-width: 768px) {
+  .form button {
+    align-self: flex-start;
+  }
+}
+
 .footer .divider {
   grid-column: full-start / full-end;
   border-top: 1px solid var(--hero-icon-color);
@@ -448,6 +610,12 @@ li {
 
 .footer .socials {
   margin: 1.2rem 0 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .socials {
+    margin-bottom: 1.2rem;
+  }
 }
 
 footer .socials .icon {
@@ -464,12 +632,4 @@ footer .socials .icon {
   .home-indicator {
     display: none;
   }
-}
-
-@media screen and (min-width: 375px) {
-  /* coming soon */
-}
-
-@media screen and (min-width: 768px) {
-  /* coming soon */
 }
