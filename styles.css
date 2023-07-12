@@ -136,6 +136,7 @@ li {
   font-size: 1.7rem;
   font-weight: 600;
   padding: 1.2rem;
+  transition: all .5s ease;
 }
 
 .btn:hover {
@@ -209,6 +210,7 @@ li {
   font-size: 1.8rem;
   font-weight: 500;
   animation: 2s fade-In, 3s ease-in-out bounceInLeft;
+  transition: color 1s, transform 1s;
 }
 
 .header .logo:hover {
@@ -246,6 +248,10 @@ li {
     font-size: 2rem;
     font-weight: 700;
     animation: 2s fade-In, 3s ease-in-out bounceInLeft;
+  }
+
+  .header .item {
+    transition: animation  2s;
   }
 
   .header .item:hover,
